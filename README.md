@@ -1,42 +1,39 @@
-# api_yamdb
+# Проект "Yamdb", реализующий API сайта
 
-API проекта api_yamdb.
+### Собирает отзывы пользователей на произведения.
+### Произведения делятся по группам и жанрам.
+### На отзывы можно оставлять комментарии.
+___
+Для установки проекта необходимо выполнить следующие команды:
 
-
-## Установка проекта
-
-Как установить проект:
-
-```bash
+```
 git clone git@github.com:Anstane/api_yamdb.git
-
 cd api_yamdb
-```
-Создаём и активируем виртуальное окружение:
-```bash
 python -m venv venv
-
 source venv/Scripts/activate
-```
-Устанавливаем зависимости из файла requirements.txt:
-```bash
 pip install -r requirements.txt
-```
-Выполняем миграции:
-```bash
 python manage.py migrate
 ```
-Активируем сам проект:
-```bash
+Запуск проекта осуществляется командой:
+```
 python manage.py runserver
 ```
-## Документация проекта
+___
+Проект имеет следующие зависимости:
+```
+requests==2.26.0
+django==2.2.16
+djangorestframework==3.12.4
+djangorestframework-simplejwt==4.7.2
+django-filter==21.1
+PyJWT==2.1.0
+pytest==6.2.4
+pytest-django==4.4.0
+pytest-pythonpath==0.7.3
+```
+___
+В проекте используются технологии:
 
-`/redoc/`
-
-
-## Авторы
-
-- [@Anstane](https://github.com/Anstane)
-- [@altvik2503](https://github.com/altvik2503)
-- [@DianaKab](https://github.com/DianaKab)
+*Django, Django Rest Framework, Simple JWT*
+___
+[Ссылка на GitHub](https://github.com/altvik2503/api_yamdb)
